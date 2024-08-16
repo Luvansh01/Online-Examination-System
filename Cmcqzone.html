@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+       
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn {
+            
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+		.start{
+		background-color: #008CBA;
+		}   
+		.submit{
+		background-color: #f44336;}     
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .timer {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .btn:disabled {
+            background-color: #dcdcdc;
+            cursor: not-allowed;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>C Language MCQ Exam</h1>
+    <div class="container">
+    
+    <form id="mcq-form">
+    	 <button type="button" id="start-btn" class="btn start">Start</button>
+            <button type="submit" id="submit-btn" class="btn submit" disabled>Submit</button>
+            <p id="result"></p>
+            <p id="timer" class="timer">Remaining Time : 10:00 min</p>
+    	 
+        <!-- Question 1 -->
+        <div class="question">
+            <p><strong>1. Which of the following is the correct syntax to include a header file in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> #include <filename.h></label><br>
+                <label><input type="radio" name="q1" value="b"> #include "filename"</label><br>
+                <label><input type="radio" name="q1" value="c"> include <filename.h></label><br>
+                <label><input type="radio" name="q1" value="d"> #include <filename></label>
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="question">
+            <p><strong>2. What is the size of an int in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> 2 bytes</label><br>
+                <label><input type="radio" name="q2" value="b"> 4 bytes</label><br>
+                <label><input type="radio" name="q2" value="c"> 8 bytes</label><br>
+                <label><input type="radio" name="q2" value="d"> It varies depending on the compiler</label>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="question">
+            <p><strong>3. Which function is used to get the length of a string in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> strlen()</label><br>
+                <label><input type="radio" name="q3" value="b"> strlength()</label><br>
+                <label><input type="radio" name="q3" value="c"> length()</label><br>
+                <label><input type="radio" name="q3" value="d"> size()</label>
+            </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="question">
+            <p><strong>4. Which of the following is not a valid variable name in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> myVar</label><br>
+                <label><input type="radio" name="q4" value="b"> _myVar</label><br>
+                <label><input type="radio" name="q4" value="c"> 2myVar</label><br>
+                <label><input type="radio" name="q4" value="d"> myVar2</label>
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question">
+            <p><strong>5. What is the output of the following code? <br> int main() { printf("%d", 10 + 5 / 2); return 0; }</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> 12</label><br>
+                <label><input type="radio" name="q5" value="b"> 15</label><br>
+                <label><input type="radio" name="q5" value="c"> 10</label><br>
+                <label><input type="radio" name="q5" value="d"> 7</label>
+            </div>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="question">
+            <p><strong>6. Which keyword is used to define a constant value in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> const</label><br>
+                <label><input type="radio" name="q6" value="b"> define</label><br>
+                <label><input type="radio" name="q6" value="c"> #define</label><br>
+                <label><input type="radio" name="q6" value="d"> fixed</label>
+            </div>
+        </div>
+        
+        <!-- Question 7 -->
+        <div class="question">
+            <p><strong>7. Which operator is used to access members of a structure in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> . (dot)</label><br>
+                <label><input type="radio" name="q7" value="b"> -> (arrow)</label><br>
+                <label><input type="radio" name="q7" value="c"> & (address)</label><br>
+                <label><input type="radio" name="q7" value="d"> * (asterisk)</label>
+            </div>
+        </div>
+        
+        <!-- Question 8 -->
+        <div class="question">
+            <p><strong>8. What will be the output of the following code snippet? <br> int x = 5; x++; printf("%d", x);</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> 5</label><br>
+                <label><input type="radio" name="q8" value="b"> 6</label><br>
+                <label><input type="radio" name="q8" value="c"> 7</label><br>
+                <label><input type="radio" name="q8" value="d"> Error</label>
+            </div>
+        </div>
+        
+        <!-- Question 9 -->
+        <div class="question">
+            <p><strong>9. What does the 'break' statement do in a loop?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> Exits the loop</label><br>
+                <label><input type="radio" name="q9" value="b"> Skips the current iteration</label><br>
+                <label><input type="radio" name="q9" value="c"> Continues to the next iteration</label><br>
+                <label><input type="radio" name="q9" value="d"> Exits the program</label>
+            </div>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="question">
+            <p><strong>10. Which of the following functions can be used to read a single character from the keyboard?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> getchar()</label><br>
+                <label><input type="radio" name="q10" value="b"> getch()</label><br>
+                <label><input type="radio" name="q10" value="c"> readchar()</label><br>
+                <label><input type="radio" name="q10" value="d"> inputchar()</label>
+            </div>
+        </div>
+        
+        <!-- Question 11 -->
+        <div class="question">
+            <p><strong>11. What is the purpose of the 'return' statement in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> To exit a function and return a value</label><br>
+                <label><input type="radio" name="q11" value="b"> To exit the program</label><br>
+                <label><input type="radio" name="q11" value="c"> To continue execution from the top</label><br>
+                <label><input type="radio" name="q11" value="d"> To jump to a different function</label>
+            </div>
+        </div>
+        
+        <!-- Question 12 -->
+        <div class="question">
+            <p><strong>12. Which of the following is the correct way to declare a pointer to an integer?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> int *ptr;</label><br>
+                                <label><input type="radio" name="q12" value="b"> int ptr;</label><br>
+                <label><input type="radio" name="q12" value="c"> pointer int ptr;</label><br>
+                <label><input type="radio" name="q12" value="d"> int ptr*;</label>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p><strong>13. What is the default return type of a function in C if not specified?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> void</label><br>
+                <label><input type="radio" name="q13" value="b"> int</label><br>
+                <label><input type="radio" name="q13" value="c"> char</label><br>
+                <label><input type="radio" name="q13" value="d"> float</label>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p><strong>14. What is the purpose of the 'sizeof' operator in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> To get the size of a variable or data type</label><br>
+                <label><input type="radio" name="q14" value="b"> To allocate memory</label><br>
+                <label><input type="radio" name="q14" value="c"> To compare the sizes of two variables</label><br>
+                <label><input type="radio" name="q14" value="d"> To get the length of a string</label>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p><strong>15. Which of the following statements is used to prevent the redefinition of a macro in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> #ifndef</label><br>
+                <label><input type="radio" name="q15" value="b"> #if</label><br>
+                <label><input type="radio" name="q15" value="c"> #endif</label><br>
+                <label><input type="radio" name="q15" value="d"> #define</label>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <p><strong>16. Which of the following is a correct way to declare a multidimensional array?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> int arr[3][4];</label><br>
+                <label><input type="radio" name="q16" value="b"> int arr[4,3];</label><br>
+                <label><input type="radio" name="q16" value="c"> int arr[3][4][5];</label><br>
+                <label><input type="radio" name="q16" value="d"> int arr[4,3,2];</label>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <p><strong>17. What will be the output of the following code? <br> int x = 10; printf("%d", x++);</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> 10</label><br>
+                <label><input type="radio" name="q17" value="b"> 11</label><br>
+                <label><input type="radio" name="q17" value="c"> 12</label><br>
+                <label><input type="radio" name="q17" value="d"> Error</label>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <p><strong>18. Which standard library function is used to dynamically allocate memory in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> malloc()</label><br>
+                <label><input type="radio" name="q18" value="b"> calloc()</label><br>
+                <label><input type="radio" name="q18" value="c"> realloc()</label><br>
+                <label><input type="radio" name="q18" value="d"> All of the above</label>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <p><strong>19. How do you declare a function prototype in C?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> void func(int, int);</label><br>
+                <label><input type="radio" name="q19" value="b"> func(int, int);</label><br>
+                <label><input type="radio" name="q19" value="c"> int func();</label><br>
+                <label><input type="radio" name="q19" value="d"> void func;</label>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <p><strong>20. What will be the output of the following code? <br> int a = 5, b = 10; printf("%d", a < b ? a : b);</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> 5</label><br>
+                <label><input type="radio" name="q20" value="b"> 10</label><br>
+                <label><input type="radio" name="q20" value="c"> 15</label><br>
+                <label><input type="radio" name="q20" value="d"> Error</label>
+            </div>
+        </div>
+
+       
+    </form>
+   </div>
+  <script>
+        let countdown;
+        let timeLeft = 600; // 10 minutes in seconds
+        let startTime; // Variable to store the start time
+        let hasSubmitted = false; // Flag to check if form has been submitted
+
+        function startExam() {
+            document.getElementById("start-btn").disabled = true;
+            document.getElementById("submit-btn").disabled = false;
+
+            // Record the start time
+            startTime = new Date().getTime();
+
+            // Start the countdown timer
+            countdown = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").textContent = "Time's up!";
+                document.getElementById("submit-btn").click(); // Auto-submit when time is up
+            } else {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                document.getElementById("timer").textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }
+        }
+
+        function stopCountdown() {
+            clearInterval(countdown);
+        }
+
+        function calculateScore(event) {
+            // Prevent the form from submitting and refreshing the page
+            event.preventDefault();
+
+            if (hasSubmitted) {
+                // If already submitted, do nothing
+                return;
+            }
+
+            // Stop the countdown when the form is submitted
+            stopCountdown();
+
+            // Calculate the elapsed time
+            let endTime = new Date().getTime();
+            let timeTaken = Math.round((endTime - startTime) / 1000); // Time in seconds
+
+            // Correct answers for each question
+            let answers = {
+                q1: "b",
+                q2: "d",
+                q3: "a",
+                q4: "c",
+                q5: "a",
+                q6: "c",
+                q7: "a",
+                q8: "b",
+                q9: "a",
+                q10: "a",
+                q11: "a",
+                q12: "a",
+                q13: "b",
+                q14: "a",
+                q15: "a",
+                q16: "a",
+                q17: "a",
+                q18: "d",
+                q19: "a",
+                q20: "a"
+            };
+
+            // Get the form element
+            let form = document.getElementById("mcq-form");
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length; // Automatically counts total questions
+
+            // Loop through answers and compare with user input
+            for (let question in answers) {
+                let selectedOption = form.querySelector(`input[name=${question}]:checked`);
+                if (selectedOption && selectedOption.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Display the result
+            let result = document.getElementById("result");
+            result.innerHTML = `Your score: ${score}/${totalQuestions} <br> Time taken: ${formatTime(timeTaken)}.`;
+
+            // Disable submit button after submission
+            document.getElementById("submit-btn").disabled = true;
+            hasSubmitted = true;
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            let secs = seconds % 60;
+            return `${minutes} minutes ${secs} seconds`;
+        }
+
+        // Attach the event listener to the form submit event
+        document.getElementById("mcq-form").addEventListener("submit", calculateScore);
+
+        // Attach the event listener to the start button
+        document.getElementById("start-btn").addEventListener("click", startExam);
+    </script>
+</body>
+</html>
+                

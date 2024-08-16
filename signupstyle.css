@@ -1,0 +1,71 @@
+/* Ensure the body takes up the full height and center content */
+html, body {
+    height: 100%; /* Full height for the body */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: f9f9f9;
+.container h2 {
+    text-align: center; /* Center align the heading */
+    color: #333; /* Dark text color for better readability */
+    margin-bottom: 20px; /* Space below the heading */
+}
+/* Container styling */
+.container {
+    width: 600px; /* Increase max-width for a wider container */
+     /* width: 100%; Full width within max-width */
+    padding: 5px; /* Increase padding inside the container */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f9f9f9; /* White background for the form */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Form styling */
+form {
+    display: flex; /* Use flexbox to stack elements vertically */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+    padding: 2px; /* Increase padding inside input fields */
+    margin-bottom: 2px; /* Increase space between input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Increase font size for better readability */
+    width: 100%; /* Full width input fields */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007bff; /* Primary color */
+    color: white; /* Text color for button */
+    padding: 12px; /* Increase padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Increase font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Paragraph and link styling */
+.container p {
+    text-align: center; /* Center-align text */
+    color: #666; /* Lighter text color */
+    margin-top: 10px; /* Space above paragraph */
+}
+
+/* Adjusted placeholder styling for better readability */
+input::placeholder {
+    color: #aaa; /* Light grey color for placeholders */
+    font-style: italic; /* Italicized placeholder text */
+}

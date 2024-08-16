@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servlet MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+       
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .start{
+		background-color: #008CBA;
+		}   
+		.submit{
+		background-color: #f44336;
+		}  
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .timer {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .btn:disabled {
+            background-color: #dcdcdc;
+            cursor: not-allowed;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Java Servlet Language MCQ Exam</h1>
+    <div class="container">
+    
+    <form id="mcq-form">
+    	 <button type="button" id="start-btn" class="btn start">Start</button>
+            <button type="submit" id="submit-btn" class="btn submit" disabled>Submit</button>
+            <p id="result"></p>
+            <p id="timer" class="timer">Remaining Time : 10:00 min</p>
+          <!-- Question 1 -->
+            <div class="question">
+                <p><strong>1. What is a Servlet in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A Java class that extends HttpServlet and handles HTTP requests</label><br>
+                    <label><input type="radio" name="q1" value="b"> A Java class that handles Java EE transactions</label><br>
+                    <label><input type="radio" name="q1" value="c"> A Java class that manages database connections</label><br>
+                    <label><input type="radio" name="q1" value="d"> A Java interface for handling web services</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->a
+            <div class="question">
+                <p><strong>2. Which package contains the HttpServlet class?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> javax.servlet.http</label><br>
+                    <label><input type="radio" name="q2" value="b"> java.servlet</label><br>
+                    <label><input type="radio" name="q2" value="c"> javax.servlet</label><br>
+                    <label><input type="radio" name="q2" value="d"> java.servlet.http</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>3. How do you configure a servlet in a web application?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> By adding a `<servlet>` element in the web.xml file</label><br>
+                    <label><input type="radio" name="q3" value="b"> By using annotations in the servlet class</label><br>
+                    <label><input type="radio" name="q3" value="c"> By extending the HttpServlet class</label><br>
+                    <label><input type="radio" name="q3" value="d"> Both a and b</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>4. What method in the HttpServlet class is used to handle GET requests?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> doGet()</label><br>
+                    <label><input type="radio" name="q4" value="b"> handleGet()</label><br>
+                    <label><input type="radio" name="q4" value="c"> processRequest()</label><br>
+                    <label><input type="radio" name="q4" value="d"> doPost()</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>5. What is the role of the `doPost()` method in servlets?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> To handle POST requests</label><br>
+                    <label><input type="radio" name="q5" value="b"> To handle GET requests</label><br>
+                    <label><input type="radio" name="q5" value="c"> To initialize servlet parameters</label><br>
+                    <label><input type="radio" name="q5" value="d"> To destroy the servlet instance</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>6. What is the purpose of the `init()` method in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> To initialize the servlet</label><br>
+                    <label><input type="radio" name="q6" value="b"> To handle client requests</label><br>
+                    <label><input type="radio" name="q6" value="c"> To destroy the servlet</label><br>
+                    <label><input type="radio" name="q6" value="d"> To load the servlet class</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>7. Which method is used to release resources in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> destroy()</</label><br>
+                    <label><input type="radio" name="q7" value="b"> finalize()</</label><br>
+                    <label><input type="radio" name="q7" value="c"> close()</</label><br>
+                    <label><input type="radio" name="q7" value="d"> terminate()</</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>8. How can you retrieve the value of a form parameter in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> request.getParameter()</</label><br>
+                    <label><input type="radio" name="q8" value="b"> response.getParameter()</</label><br>
+                    <label><input type="radio" name="q8" value="c"> session.getParameter()</</label><br>
+                    <label><input type="radio" name="q8" value="d"> context.getParameter()</</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>9. What is the purpose of the `doPut()` method in servlets?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> To handle PUT requests</label><br>
+                    <label><input type="radio" name="q9" value="b"> To handle POST requests</label><br>
+                    <label><input type="radio" name="q9" value="c"> To handle DELETE requests</label><br>
+                    <label><input type="radio" name="q9" value="d"> To handle GET requests</label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>10. What is a servlet filter?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> An object that performs filtering tasks on request and response objects</label><br>
+                    <label><input type="radio" name="q10" value="b"> A servlet that handles HTTP requests</label><br>
+                    <label><input type="radio" name="q10" value="c"> A Java class that manages session data</label><br>
+                    <label><input type="radio" name="q10" value="d"> A method used to process HTTP requests</label>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <p><strong>11. How do you define a servlet filter in the web.xml file?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> By adding a `<filter>` element</label><br>
+                    <label><input type="radio" name="q11" value="b"> By using annotations</label><br>
+                    <label><input type="radio" name="q11" value="c"> By configuring it in the servlet code</label><br>
+                    <label><input type="radio" name="q11" value="d"> By defining it in a JSP file</label>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <p><strong>12. What is the role of the `FilterConfig` object?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> To provide initialization parameters to a filter</label><br>
+                    <label><input type="radio" name="q12" value="b"> To configure servlet parameters</label><br>
+                    <label><input type="radio" name="q12" value="c"> To handle HTTP requests</label><br>
+                    <label><input type="radio" name="q12" value="d"> To manage session attributes</label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <p><strong>13. How can you forward a request to another resource in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a"> Using `RequestDispatcher.forward()`</label><br>
+                    <label><input type="radio" name="q13" value="b"> Using `HttpServletResponse.sendRedirect()`</label><br>
+                    <label><input type="radio" name="q13" value="c"> Using `ServletContext.include()`</label><br>
+                    <label><input type="radio" name="q13" value="d"> Using `HttpServletRequest.dispatch()`</label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <p><strong>14. What method is used to obtain a request dispatcher in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a"> getRequestDispatcher()</</label><br>
+                    <label><input type="radio" name="q14" value="b"> getDispatcher()</</label><br>
+                    <label><input type="radio" name="q14" value="c"> requestDispatcher()</</label><br>
+                    <label><input type="radio" name="q14" value="d"> obtainDispatcher()</</label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <p><strong>15. How do you set a response content type in a servlet?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> response.setContentType()</</label><br>
+                    <label><input type="radio" name="q15" value="b"> response.setHeader()</</label><br>
+                    <label><input type="radio" name="q15" value="c"> response.setMimeType()</</label><br>
+                    <label><input type="radio" name="q15" value="d"> response.setType()</</label>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <p><strong>16. What is the `ServletContext` used for?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a"> To provide a communication channel between servlets and JSPs</label><br>
+                    <label><input type="radio" name="q16" value="b"> To provide a way to set and get application-wide parameters</label><br>
+                    <label><input type="radio" name="q16" value="c"> To handle HTTP requests</label><br>
+                    <label><input type="radio" name="q16" value="d"> To manage sessions</label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <p><strong>17. What method in `HttpServletRequest` is used to get the client’s IP address?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a"> getRemoteAddr()</</label><br>
+                    <label><input type="radio" name="q17" value="b"> getClientIp()</</label><br>
+                    <label><input type="radio" name="q17" value="c"> getClientAddress()</</label><br>
+                    <label><input type="radio" name="q17" value="d"> getAddress()</</label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <p><strong>18. What is a `ServletContextListener`?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a"> An interface that listens for servlet context events</label><br>
+                    <label><input type="radio" name="q18" value="b"> A class that handles HTTP requests</label><br>
+                    <label><input type="radio" name="q18" value="c"> An interface that manages servlet lifecycle</label><br>
+                    <label><input type="radio" name="q18" value="d"> A class that performs data validation</label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <p><strong>19. How can you set an attribute in the request object?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a"> request.setAttribute()</</label><br>
+                    <label><input type="radio" name="q19" value="b"> request.addAttribute()</</label><br>
+                    <label><input type="radio" name="q19" value="c"> request.putAttribute()</</label><br>
+                    <label><input type="radio" name="q19" value="d"> request.setParameter()</</label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <p><strong>20. Which method in `HttpServletResponse` is used to send a redirect response to the client?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a"> sendRedirect()</</label><br>
+                    <label><input type="radio" name="q20" value="b"> sendForward()</</label><br>
+                    <label><input type="radio" name="q20" value="c"> sendResponse()</</label><br>
+                    <label><input type="radio" name="q20" value="d"> redirect()</</label>
+                </div>
+            </div>
+    </form>
+    
+   </div>
+   
+    <script>
+        let countdown;
+        let timeLeft = 600; // 10 minutes in seconds
+        let startTime; // Variable to store the start time
+        let hasSubmitted = false; // Flag to check if form has been submitted
+
+        function startExam() {
+            document.getElementById("start-btn").disabled = true;
+            document.getElementById("submit-btn").disabled = false;
+
+            // Record the start time
+            startTime = new Date().getTime();
+
+            // Start the countdown timer
+            countdown = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").textContent = "Time's up!";
+                document.getElementById("submit-btn").click(); // Auto-submit when time is up
+            } else {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                document.getElementById("timer").textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }
+        }
+
+        function stopCountdown() {
+            clearInterval(countdown);
+        }
+
+        function calculateScore(event) {
+            // Prevent the form from submitting and refreshing the page
+            event.preventDefault();
+
+            if (hasSubmitted) {
+                // If already submitted, do nothing
+                return;
+            }
+
+            // Stop the countdown when the form is submitted
+            stopCountdown();
+
+            // Calculate the elapsed time
+            let endTime = new Date().getTime();
+            let timeTaken = Math.round((endTime - startTime) / 1000); // Time in seconds
+
+            // Correct answers for each question
+         	let answers = {
+            q1: "a",
+            q2: "a",
+            q3: "d",
+            q4: "a",
+            q5: "a",
+            q6: "a",
+            q7: "a",
+            q8: "a",
+            q9: "a",
+            q10: "a",
+            q11: "a",
+            q12: "a",
+            q13: "a",
+            q14: "a",
+            q15: "a",
+            q16: "b",
+            q17: "a",
+            q18: "a",
+            q19: "a",
+            q20: "a"
+        };
+
+            // Get the form element
+            let form = document.getElementById("mcq-form");
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length; // Automatically counts total questions
+
+            // Loop through answers and compare with user input
+            for (let question in answers) {
+                let selectedOption = form.querySelector(`input[name=${question}]:checked`);
+                if (selectedOption && selectedOption.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Display the result
+            let result = document.getElementById("result");
+            result.innerHTML = `Your score: ${score}/${totalQuestions} <br> Time taken: ${formatTime(timeTaken)}.`;
+
+            // Disable submit button after submission
+            document.getElementById("submit-btn").disabled = true;
+            hasSubmitted = true;
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            let secs = seconds % 60;
+            return `${minutes} minutes ${secs} seconds`;
+        }
+
+        // Attach the event listener to the form submit event
+        document.getElementById("mcq-form").addEventListener("submit", calculateScore);
+
+        // Attach the event listener to the start button
+        document.getElementById("start-btn").addEventListener("click", startExam);
+    </script>
+</body>
+</html>
+                

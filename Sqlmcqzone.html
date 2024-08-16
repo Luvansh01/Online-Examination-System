@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+       
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .start{
+		background-color: #008CBA;
+		}   
+		.submit{
+		background-color: #f44336;
+		}  
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .timer {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .btn:disabled {
+            background-color: #dcdcdc;
+            cursor: not-allowed;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>SQL Language MCQ Exam</h1>
+    <div class="container">
+    
+    <form id="mcq-form">
+    
+    	  <button type="button" id="start-btn" class="btn start">Start</button>
+            <button type="submit" id="submit-btn" class="btn submit" disabled>Submit</button>
+            <p id="result"></p>
+            <p id="timer" class="timer">Remaining Time : 10:00 min</p>
+        <!-- Question 1 -->
+            <div class="question">
+                <p><strong>1. What does SQL stand for?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> Structured Query Language</label><br>
+                    <label><input type="radio" name="q1" value="b"> Simple Query Language</label><br>
+                    <label><input type="radio" name="q1" value="c"> Sequential Query Language</label><br>
+                    <label><input type="radio" name="q1" value="d"> Standard Query Language</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p><strong>2. Which SQL statement is used to extract data from a database?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> SELECT</label><br>
+                    <label><input type="radio" name="q2" value="b"> EXTRACT</label><br>
+                    <label><input type="radio" name="q2" value="c"> GET</label><br>
+                    <label><input type="radio" name="q2" value="d"> RETRIEVE</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>3. Which SQL clause is used to filter records?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> WHERE</label><br>
+                    <label><input type="radio" name="q3" value="b"> FILTER</label><br>
+                    <label><input type="radio" name="q3" value="c"> HAVING</label><br>
+                    <label><input type="radio" name="q3" value="d"> LIMIT</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>4. Which SQL statement is used to update existing data in a database?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> UPDATE</label><br>
+                    <label><input type="radio" name="q4" value="b"> MODIFY</label><br>
+                    <label><input type="radio" name="q4" value="c"> CHANGE</label><br>
+                    <label><input type="radio" name="q4" value="d"> ALTER</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>5. How do you delete a record from a table in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> DELETE FROM table_name</label><br>
+                    <label><input type="radio" name="q5" value="b"> REMOVE FROM table_name</label><br>
+                    <label><input type="radio" name="q5" value="c"> DROP FROM table_name</label><br>
+                    <label><input type="radio" name="q5" value="d"> TRUNCATE table_name</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>6. Which SQL keyword is used to prevent duplicate values in a query result?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> DISTINCT</label><br>
+                    <label><input type="radio" name="q6" value="b"> UNIQUE</label><br>
+                    <label><input type="radio" name="q6" value="c"> DIFFERENT</label><br>
+                    <label><input type="radio" name="q6" value="d"> NO_DUPLICATES</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>7. Which function is used to count the number of rows in a SQL query?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> COUNT()</label><br>
+                    <label><input type="radio" name="q7" value="b"> TOTAL()</</label><br>
+                    <label><input type="radio" name="q7" value="c"> SUM()</</label><br>
+                    <label><input type="radio" name="q7" value="d"> NUMBER()</</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>8. How do you create a new table in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> CREATE TABLE table_name</label><br>
+                    <label><input type="radio" name="q8" value="b"> ADD TABLE table_name</label><br>
+                    <label><input type="radio" name="q8" value="c"> NEW TABLE table_name</label><br>
+                    <label><input type="radio" name="q8" value="d"> MAKE TABLE table_name</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>9. What is the purpose of the SQL `JOIN` clause?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> To combine rows from two or more tables based on a related column</label><br>
+                    <label><input type="radio" name="q9" value="b"> To delete rows from a table</label><br>
+                    <label><input type="radio" name="q9" value="c"> To create a new table</label><br>
+                    <label><input type="radio" name="q9" value="d"> To update existing rows</label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>10. Which SQL clause is used to group rows that have the same values into summary rows?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> GROUP BY</label><br>
+                    <label><input type="radio" name="q10" value="b"> ORDER BY</label><br>
+                    <label><input type="radio" name="q10" value="c"> HAVING</label><br>
+                    <label><input type="radio" name="q10" value="d"> DISTINCT</label>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <p><strong>11. How do you add a new column to an existing table in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> ALTER TABLE table_name ADD column_name datatype</label><br>
+                    <label><input type="radio" name="q11" value="b"> MODIFY TABLE table_name ADD column_name datatype</label><br>
+                    <label><input type="radio" name="q11" value="c"> UPDATE TABLE table_name ADD column_name datatype</label><br>
+                    <label><input type="radio" name="q11" value="d"> APPEND TABLE table_name ADD column_name datatype</label>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <p><strong>12. What SQL keyword is used to create a unique index on a column?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> UNIQUE</label><br>
+                    <label><input type="radio" name="q12" value="b"> INDEX</label><br>
+                    <label><input type="radio" name="q12" value="c"> PRIMARY</label><br>
+                    <label><input type="radio" name="q12" value="d"> DISTINCT</label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <p><strong>13. Which SQL clause is used to sort the result set?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a"> ORDER BY</label><br>
+                    <label><input type="radio" name="q13" value="b"> SORT BY</label><br>
+                    <label><input type="radio" name="q13" value="c"> GROUP BY</label><br>
+                    <label><input type="radio" name="q13" value="d"> ARRANGE BY</label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <p><strong>14. What is the purpose of the `HAVING` clause in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a"> To filter groups of rows</label><br>
+                    <label><input type="radio" name="q14" value="b"> To sort rows</label><br>
+                    <label><input type="radio" name="q14" value="c"> To join tables</label><br>
+                    <label><input type="radio" name="q14" value="d"> To limit the number of rows returned</label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <p><strong>15. What does the `NULL` keyword represent in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> A missing or undefined value</label><br>
+                    <label><input type="radio" name="q15" value="b"> A zero value</label><br>
+                    <label><input type="radio" name="q15" value="c"> A default value</label><br>
+                    <label><input type="radio" name="q15" value="d"> A negative value</label>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <p><strong>16. How can you retrieve the current date in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a"> SELECT CURRENT_DATE</label><br>
+                    <label><input type="radio" name="q16" value="b"> SELECT DATE()</label><br>
+                    <label><input type="radio" name="q16" value="c"> SELECT NOW()</label><br>
+                    <label><input type="radio" name="q16" value="d"> SELECT TODAY()</label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <p><strong>17. What is a `subquery` in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a"> A query nested inside another query</label><br>
+                    <label><input type="radio" name="q17" value="b"> A query used to update records</label><br>
+                    <label><input type="radio" name="q17" value="c"> A query that creates a table</label><br>
+                    <label><input type="radio" name="q17" value="d"> A query that joins two tables</label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <p><strong>18. Which SQL statement is used to remove all rows from a table without deleting the table itself?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a"> TRUNCATE TABLE table_name</label><br>
+                    <label><input type="radio" name="q18" value="b"> DELETE FROM table_name</label><br>
+                    <label><input type="radio" name="q18" value="c"> DROP TABLE table_name</label><br>
+                    <label><input type="radio" name="q18" value="d"> CLEAR TABLE table_name</label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <p><strong>19. What is an `index` in SQL?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a"> A database object used to speed up the retrieval of rows</label><br>
+                    <label><input type="radio" name="q19" value="b"> A type of constraint to ensure uniqueness</label><br>
+                    <label><input type="radio" name="q19" value="c"> A special type of table</label><br>
+                    <label><input type="radio" name="q19" value="d"> A function to format query results</label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <p><strong>20. Which SQL command is used to give a name to a database object?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a"> CREATE</label><br>
+                    <label><input type="radio" name="q20" value="b"> RENAME</label><br>
+                    <label><input type="radio" name="q20" value="c"> ALTER</label><br>
+                    <label><input type="radio" name="q20" value="d"> SET</label>
+                </div>
+            </div>
+
+        
+    </form>
+   </div>
+    <script>
+        let countdown;
+        let timeLeft = 600; // 10 minutes in seconds
+        let startTime; // Variable to store the start time
+        let hasSubmitted = false; // Flag to check if form has been submitted
+
+        function startExam() {
+            document.getElementById("start-btn").disabled = true;
+            document.getElementById("submit-btn").disabled = false;
+
+            // Record the start time
+            startTime = new Date().getTime();
+
+            // Start the countdown timer
+            countdown = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").textContent = "Time's up!";
+                document.getElementById("submit-btn").click(); // Auto-submit when time is up
+            } else {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                document.getElementById("timer").textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }
+        }
+
+        function stopCountdown() {
+            clearInterval(countdown);
+        }
+
+        function calculateScore(event) {
+            // Prevent the form from submitting and refreshing the page
+            event.preventDefault();
+
+            if (hasSubmitted) {
+                // If already submitted, do nothing
+                return;
+            }
+
+            // Stop the countdown when the form is submitted
+            stopCountdown();
+
+            // Calculate the elapsed time
+            let endTime = new Date().getTime();
+            let timeTaken = Math.round((endTime - startTime) / 1000); // Time in seconds
+
+            // Correct answers for each question
+         	 let answers = {
+                q1: "a",
+                q2: "a",
+                q3: "a",
+                q4: "a",
+                q5: "a",
+                q6: "a",
+                q7: "a",
+                q8: "a",
+                q9: "a",
+                q10: "a",
+                q11: "a",
+                q12: "a",
+                q13: "a",
+                q14: "a",
+                q15: "a",
+                q16: "a",
+                q17: "a",
+                q18: "a",
+                q19: "a",
+                q20: "b"
+            };
+
+            // Get the form element
+            let form = document.getElementById("mcq-form");
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length; // Automatically counts total questions
+
+            // Loop through answers and compare with user input
+            for (let question in answers) {
+                let selectedOption = form.querySelector(`input[name=${question}]:checked`);
+                if (selectedOption && selectedOption.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Display the result
+            let result = document.getElementById("result");
+            result.innerHTML = `Your score: ${score}/${totalQuestions} <br> Time taken: ${formatTime(timeTaken)}.`;
+
+            // Disable submit button after submission
+            document.getElementById("submit-btn").disabled = true;
+            hasSubmitted = true;
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            let secs = seconds % 60;
+            return `${minutes} minutes ${secs} seconds`;
+        }
+
+        // Attach the event listener to the form submit event
+        document.getElementById("mcq-form").addEventListener("submit", calculateScore);
+
+        // Attach the event listener to the start button
+        document.getElementById("start-btn").addEventListener("click", startExam);
+    </script>
+ 
+</body>
+</html>
+                

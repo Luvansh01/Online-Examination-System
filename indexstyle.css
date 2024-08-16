@@ -1,0 +1,66 @@
+
+/* General Container Styles */
+.container {
+    width: 500px; /* Set a max-width for the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ddd; /* Light border for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Heading Style */
+.container h2 {
+    text-align: center; /* Center align the heading */
+    color: #333; /* Dark text color for better readability */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form Elements Styles */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px; /* Add padding inside input fields */
+    margin-bottom: 15px; /* Space between input fields */
+    border: 1px solid #ccc; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Increase font size for better readability */
+    width: 100%; /* Full width input fields */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color for button */
+    padding: 10px; /* Add padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade for button on hover */
+}
+
+/* Link Style */
+.container a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.container a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+/* Paragraph Style */
+.container p {
+    text-align: center; /* Center align the paragraph */
+    color: #666; /* Lighter text color for the paragraph */
+    margin-top: 20px; /* Space above the paragraph */
+}

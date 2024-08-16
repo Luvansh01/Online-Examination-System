@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* General Styles for Body */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+    background-color: #f4f4f4; /* Light background color for the page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for Update Profile Section */
+.update-profile {
+    max-width: 800px; /* Set a maximum width for the section */
+    margin: 20px auto; /* Center the section horizontally with space above and below */
+    padding: 20px; /* Add padding inside the section */
+    border: 1px solid #ddd; /* Light border around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* White background for the section */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.update-profile h2 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+.update-profile ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.update-profile li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.update-profile a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Primary color for links */
+    font-size: 16px; /* Font size for better readability */
+    display: block; /* Make links block elements for easier clicking */
+    padding: 10px; /* Add padding inside the links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.update-profile a:hover {
+    background-color: #e9ecef; /* Light background color on hover */
+}
+
+/* Styling for Topics Section */
+.topics-section {
+    max-width: 800px; /* Set a maximum width for the section */
+    margin: 20px auto; /* Center the section horizontally with space above and below */
+    padding: 20px; /* Add padding inside the section */
+    border: 1px solid #ddd; /* Light border around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* White background for the section */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.topics-section h2 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+.topics-section ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.topics-section li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.topics-section a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Primary color for links */
+    font-size: 16px; /* Font size for better readability */
+    display: block; /* Make links block elements for easier clicking */
+    padding: 10px; /* Add padding inside the links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.topics-section a:hover {
+    background-color: #e9ecef; /* Light background color on hover */
+}

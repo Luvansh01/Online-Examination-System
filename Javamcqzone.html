@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Language MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+       
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn {
+           
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+         .start{
+		background-color: #008CBA;
+		}   
+		.submit{
+		background-color: #f44336;
+		}  
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .timer {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .btn:disabled {
+            background-color: #dcdcdc;
+            cursor: not-allowed;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Java Language MCQ Exam</h1>
+    <div class="container">
+    
+    <form id="mcq-form">
+         <!-- Question 1 -->
+          <button type="button" id="start-btn" class="btn start">Start</button>
+            <button type="submit" id="submit-btn" class="btn submit" disabled>Submit</button>
+            <p id="result"></p>
+            <p id="timer" class="timer">Remaining Time : 10:00 min</p>
+            
+            <div class="question">
+                <p><strong>1. Which of the following is the correct way to declare a variable in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> int var;</label><br>
+                    <label><input type="radio" name="q1" value="b"> var int;</label><br>
+                    <label><input type="radio" name="q1" value="c"> integer var;</label><br>
+                    <label><input type="radio" name="q1" value="d"> variable int;</label>
+                </div>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <p><strong>2. What is the default value of a boolean variable in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> true</label><br>
+                    <label><input type="radio" name="q2" value="b"> false</label><br>
+                    <label><input type="radio" name="q2" value="c"> 0</label><br>
+                    <label><input type="radio" name="q2" value="d"> null</label>
+                </div>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>3. Which method is called when an object is created in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> main()</label><br>
+                    <label><input type="radio" name="q3" value="b"> constructor()</label><br>
+                    <label><input type="radio" name="q3" value="c"> new()</label><br>
+                    <label><input type="radio" name="q3" value="d"> init()</label>
+                </div>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>4. What is the correct syntax to declare a constant in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> final int x = 10;</label><br>
+                    <label><input type="radio" name="q4" value="b"> int x = final 10;</label><br>
+                    <label><input type="radio" name="q4" value="c"> const int x = 10;</label><br>
+                    <label><input type="radio" name="q4" value="d"> static int x = 10;</label>
+                </div>
+            </div>
+            
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>5. Which keyword is used to define a class in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> class</label><br>
+                    <label><input type="radio" name="q5" value="b"> struct</label><br>
+                    <label><input type="radio" name="q5" value="c"> object</label><br>
+                    <label><input type="radio" name="q5" value="d"> type</label>
+                </div>
+            </div>
+            
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>6. What is the output of the following code? <br> System.out.println(1 + 2 + "3");</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> 33</label><br>
+                    <label><input type="radio" name="q6" value="b"> 6</label><br>
+                    <label><input type="radio" name="q6" value="c"> 12</label><br>
+                    <label><input type="radio" name="q6" value="d"> 15</label>
+                </div>
+            </div>
+            
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>7. Which of the following is a valid way to handle exceptions in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> try-catch</label><br>
+                    <label><input type="radio" name="q7" value="b"> throw-catch</label><br>
+                    <label><input type="radio" name="q7" value="c"> catch-throw</label><br>
+                    <label><input type="radio" name="q7" value="d"> throw-finally</label>
+                </div>
+            </div>
+            
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>8. What is the purpose of the `static` keyword in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> It defines a method or variable that belongs to the class, rather than instances of the class</label><br>
+                    <label><input type="radio" name="q8" value="b"> It defines a method or variable that can be used only within the method</label><br>
+                    <label><input type="radio" name="q8" value="c"> It indicates that a method or variable is private to the class</label><br>
+                    <label><input type="radio" name="q8" value="d"> It is used to declare constants</label>
+                </div>
+            </div>
+            
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>9. Which access modifier makes a member visible only within its own package?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> default</label><br>
+                    <label><input type="radio" name="q9" value="b"> public</label><br>
+                    <label><input type="radio" name="q9" value="c"> protected</label><br>
+                    <label><input type="radio" name="q9" value="d"> private</label>
+                </div>
+            </div>
+            
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>10. What is the result of the following code? <br> String s = "Hello" + 5 + 6;</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> Hello56</label><br>
+                    <label><input type="radio" name="q10" value="b"> Hello11</label><br>
+                    <label><input type="radio" name="q10" value="c"> 11Hello</label><br>
+                    <label><input type="radio" name="q10" value="d"> Error</label>
+                </div>
+            </div>
+            
+            <!-- Question 11 -->
+            <div class="question">
+                <p><strong>11. What is the purpose of the `this` keyword in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> To refer to the current instance of the class</label><br>
+                    <label><input type="radio" name="q11" value="b"> To refer to the parent class instance</label><br>
+                    <label><input type="radio" name="q11" value="c"> To refer to a static method</label><br>
+                    <label><input type="radio" name="q11" value="d"> To refer to a local variable</label>
+                </div>
+            </div>
+            
+            <!-- Question 12 -->
+            <div class="question">
+                <p><strong>12. How do you declare an array of integers in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> int[] arr;</label><br>
+                    <label><input type="radio" name="q12" value="b"> int arr[];</label><br>
+                    <label><input type="radio" name="q12" value="c"> array<int> arr;</label><br>
+                    <label><input type="radio" name="q12" value="d"> int array arr;</label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <p><strong>13. What is the output of the following code? <br> System.out.println(10 / 4);</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a"> 2.5</label><br>
+                    <label><input type="radio" name="q13" value="b"> 2</label><br>
+                    <label><input type="radio" name="q13" value="c"> 2.0</label><br>
+                    <label><input type="radio" name="q13" value="d"> Error</label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <p><strong>14. What will be the result of the following code snippet? <br> int x = 5; x *= 3 + 2;</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a"> 25</label><br>
+                    <label><input type="radio" name="q14" value="b"> 35</label><br>
+                    <label><input type="radio" name="q14" value="c"> 15</label><br>
+                    <label><input type="radio" name="q14" value="d"> 20</label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <p><strong>15. What does the `super` keyword do in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> It refers to the superclass of the current object</label><br>
+                    <label><input type="radio" name="q15" value="b"> It refers to the subclass of the current object</label><br>
+                    <label><input type="radio" name="q15" value="c"> It creates a new instance of the superclass</label><br>
+                    <label><input type="radio" name="q15" value="d"> It invokes the current object's constructor</label>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <p><strong>16. How do you create a new thread in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a"> Extend the Thread class and override the run() method</label><br>
+                    <label><input type="radio" name="q16" value="b"> Implement the Runnable interface and pass it to a Thread</label><br>
+                    <label><input type="radio" name="q16" value="c"> Use the Thread.start() method</label><br>
+                    <label><input type="radio" name="q16" value="d"> Both a and b</label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <p><strong>17. Which of the following is used to handle multiple exceptions in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a"> Multi-catch block</label><br>
+                    <label><input type="radio" name="q17" value="b"> Nested try-catch blocks</label><br>
+                    <label><input type="radio" name="q17" value="c"> Multiple catch blocks</label><br>
+                    <label><input type="radio" name="q17" value="d"> All of the above</label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <p><strong>18. Which method is used to start a thread in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a"> run()</label><br>
+                    <label><input type="radio" name="q18" value="b"> execute()</label><br>
+                    <label><input type="radio" name="q18" value="c"> start()</label><br>
+                    <label><input type="radio" name="q18" value="d"> begin()</label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <p><strong>19. What is the purpose of the `final` keyword in Java?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a"> It defines constants, prevents method overriding, and inheritance</label><br>
+                    <label><input type="radio" name="q19" value="b"> It is used to create immutable objects</label><br>
+                    <label><input type="radio" name="q19" value="c"> It restricts variable modification</label><br>
+                    <label><input type="radio" name="q19" value="d"> All of the above</label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <p><strong>20. Which collection class in Java maintains the order of elements?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a"> ArrayList</label><br>
+                    <label><input type="radio" name="q20" value="b"> HashSet</label><br>
+                    <label><input type="radio" name="q20" value="c"> HashMap</label><br>
+                    <label><input type="radio" name="q20" value="d"> TreeSet</label>
+                </div>
+            </div>
+
+        
+    </form>
+   </div>
+  
+   
+     <script>
+        let countdown;
+        let timeLeft = 600; // 10 minutes in seconds
+        let startTime; // Variable to store the start time
+        let hasSubmitted = false; // Flag to check if form has been submitted
+
+        function startExam() {
+            document.getElementById("start-btn").disabled = true;
+            document.getElementById("submit-btn").disabled = false;
+
+            // Record the start time
+            startTime = new Date().getTime();
+
+            // Start the countdown timer
+            countdown = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").textContent = "Time's up!";
+                document.getElementById("submit-btn").click(); // Auto-submit when time is up
+            } else {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                document.getElementById("timer").textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }
+        }
+
+        function stopCountdown() {
+            clearInterval(countdown);
+        }
+
+        function calculateScore(event) {
+            // Prevent the form from submitting and refreshing the page
+            event.preventDefault();
+
+            if (hasSubmitted) {
+                // If already submitted, do nothing
+                return;
+            }
+
+            // Stop the countdown when the form is submitted
+            stopCountdown();
+
+            // Calculate the elapsed time
+            let endTime = new Date().getTime();
+            let timeTaken = Math.round((endTime - startTime) / 1000); // Time in seconds
+
+            // Correct answers for each question
+          let answers = {
+            q1: "a",
+            q2: "b",
+            q3: "b",
+            q4: "a",
+            q5: "a",
+            q6: "c",
+            q7: "a",
+            q8: "a",
+            q9: "a",
+            q10: "a",
+            q11: "a",
+            q12: "a",
+            q13: "b",
+            q14: "b",
+            q15: "a",
+            q16: "d",
+            q17: "d",
+            q18: "d",
+            q19: "d",
+            q20: "a"
+        };
+
+
+
+            // Get the form element
+            let form = document.getElementById("mcq-form");
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length; // Automatically counts total questions
+
+            // Loop through answers and compare with user input
+            for (let question in answers) {
+                let selectedOption = form.querySelector(`input[name=${question}]:checked`);
+                if (selectedOption && selectedOption.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Display the result
+            let result = document.getElementById("result");
+            result.innerHTML = `Your score: ${score}/${totalQuestions} <br> Time taken: ${formatTime(timeTaken)}.`;
+
+            // Disable submit button after submission
+            document.getElementById("submit-btn").disabled = true;
+            hasSubmitted = true;
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            let secs = seconds % 60;
+            return `${minutes} minutes ${secs} seconds`;
+        }
+
+        // Attach the event listener to the form submit event
+        document.getElementById("mcq-form").addEventListener("submit", calculateScore);
+
+        // Attach the event listener to the start button
+        document.getElementById("start-btn").addEventListener("click", startExam);
+    </script>
+</body>
+</html>
+                
